@@ -4,10 +4,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "09",
-        "state_name": "Distrito Federal",
-        "id": 1
+        "STATE_ID": "09",
+        "STATE_NAME": "Distrito Federal"
       },
+	     "id": 1,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -292,9 +292,9 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "12",
-        "STATE_NAME": "Guerrero",
+        "STATE_NAME": "Guerrero"
       },
-      "id": 2
+      "id": 2,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -2332,10 +2332,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "15",
-        "state_name": "México",
-        "id": 3
+        "STATE_ID": "15",
+        "STATE_NAME": "México"
       },
+	     "id": 3,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -4139,10 +4139,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "17",
-        "state_name": "Morelos",
-        "id": 4
+        "STATE_ID": "17",
+        "STATE_NAME": "Morelos"
       },
+	     "id": 4,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -4602,10 +4602,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "25",
-        "state_name": "Sinaloa",
-        "id": 5
+        "STATE_ID": "25",
+        "STATE_NAME": "Sinaloa"
       },
+	     "id": 5,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -6463,10 +6463,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "02",
-        "state_name": "Baja California",
-        "id": 6
+        "STATE_ID": "02",
+        "STATE_NAME": "Baja California"
       },
+	     "id": 6,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -9536,10 +9536,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "26",
-        "state_name": "Sonora",
-        "id": 7
+        "STATE_ID": "26",
+        "STATE_NAME": "Sonora"
       },
+	     "id": 7,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -12561,10 +12561,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "03",
-        "state_name": "Baja California Sur",
-        "id": 8
+        "STATE_ID": "03",
+        "STATE_NAME": "Baja California Sur"
       },
+ 	      "id": 8,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -15658,10 +15658,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "32",
-        "state_name": "Zacatecas",
-        "id": 9
+        "STATE_ID": "32",
+        "STATE_NAME": "Zacatecas"
       },
+	     "id": 9,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -19289,10 +19289,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "10",
-        "state_name": "Durango",
-        "id": 10
+        "STATE_ID": "10",
+        "STATE_NAME": "Durango"
       },
+	     "id": 10,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -21744,10 +21744,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "08",
-        "state_name": "Chihuahua",
-        "id": 11
+        "STATE_ID": "08",
+        "STATE_NAME": "Chihuahua"
       },
+	     "id": 11,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -24719,10 +24719,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "06",
-        "state_name": "Colima",
-        "id": 12
+        "STATE_ID": "06",
+        "STATE_NAME": "Colima"
       },
+	     "id": 12,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -25536,10 +25536,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "18",
-        "state_name": "Nayarit",
-        "id": 13
+        "STATE_ID": "18",
+        "STATE_NAME": "Nayarit"
       },
+	     "id": 13,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -27397,10 +27397,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "16",
-        "state_name": "Michoacán",
-        "id": 14
+        "STATE_ID": "16",
+        "STATE_NAME": "Michoacán"
       },
+	     "id": 14,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -30052,10 +30052,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "14",
-        "state_name": "Jalisco",
-        "id": 15
+        "STATE_ID": "14",
+        "STATE_NAME": "Jalisco"
       },
+	     "id": 15,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -35285,10 +35285,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "07",
-        "state_name": "Chiapas",
-        "id": 16
+        "STATE_ID": "07",
+        "STATE_NAME": "Chiapas"
       },
+	     "id": 16,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -37052,10 +37052,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "27",
-        "state_name": "Tabasco",
-        "id": 17
+        "STATE_ID": "27",
+        "STATE_NAME": "Tabasco"
       },
+	     "id": 17,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -38695,10 +38695,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "20",
-        "state_name": "Oaxaca",
-        "id": 18
+        "STATE_ID": "20",
+        "STATE_NAME": "Oaxaca"
       },
+	     "id": 18,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -40916,10 +40916,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "11",
-        "state_name": "Guanajuato",
-        "id": 19
+        "STATE_ID": "11",
+        "STATE_NAME": "Guanajuato"
       },
+	     "id": 19,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -42775,10 +42775,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "01",
-        "state_name": "Aguascalientes",
-        "id": 20
+        "STATE_ID": "01",
+        "STATE_NAME": "Aguascalientes"
       },
+	     "id": 20,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -43254,10 +43254,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "22",
-        "state_name": "Querétaro",
-        "id": 21
+        "STATE_ID": "22",
+        "STATE_NAME": "Querétaro"
       },
+	     "id": 21,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -44369,10 +44369,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "24",
-        "state_name": "San Luis Potosí",
-        "id": 22
+        "STATE_ID": "24",
+        "STATE_NAME": "San Luis Potosí"
       },
+	     "id": 22,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -46904,10 +46904,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "29",
-        "state_name": "Tlaxcala",
-        "id": 23
+        "STATE_ID": "29",
+        "STATE_NAME": "Tlaxcala"
       },
+	     "id": 23,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -47471,10 +47471,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "21",
-        "state_name": "Puebla",
-        "id": 24
+        "STATE_ID": "21",
+        "STATE_NAME": "Puebla"
       },
+	     "id": 24,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -50334,10 +50334,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "13",
-        "state_name": "Hidalgo",
-        "id": 25
+        "STATE_ID": "13",
+        "STATE_NAME": "Hidalgo"
       },
+	     "id": 25,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -52381,10 +52381,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "30",
-        "state_name": "Veracruz",
-        "id": 26
+        "STATE_ID": "30",
+        "STATE_NAME": "Veracruz"
       },
+	     "id": 26,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -56398,10 +56398,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "19",
-        "state_name": "Nuevo León",
-        "id": 27
+        "STATE_ID": "19",
+        "STATE_NAME": "Nuevo León"
       },
+	     "id": 27,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -57845,10 +57845,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "05",
-        "state_name": "Coahuila",
-        "id": 28
+        "STATE_ID": "05",
+        "STATE_NAME": "Coahuila"
       },
+	     "id": 28,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -60160,10 +60160,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "28",
-        "state_name": "Tamaulipas",
-        "id": 29
+        "STATE_ID": "28",
+        "STATE_NAME": "Tamaulipas"
       },
+	     "id": 29,
       "geometry": {
         "type": "Polygon",
         "coordinates": [
@@ -62643,10 +62643,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "31",
-        "state_name": "Yucatán",
-        "id": 30
+        "STATE_ID": "31",
+        "STATE_NAME": "Yucatán"
       },
+	     "id": 30,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -64356,10 +64356,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "04",
-        "state_name": "Campeche",
-        "id": 31
+        "STATE_ID": "04",
+        "STATE_NAME": "Campeche"
       },
+	     "id": 31,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
@@ -65481,10 +65481,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "23",
-        "state_name": "Quintana Roo",
-        "id": 32
+        "STATE_ID": "23",
+        "STATE_NAME": "Quintana Roo"
       },
+	     "id": 32,
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
