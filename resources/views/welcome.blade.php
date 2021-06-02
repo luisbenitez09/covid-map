@@ -156,7 +156,7 @@
                             hover: false
                         });
                     }
-                    hoveredStateId = e.features[0].properties.id;
+                    hoveredStateId = e.features[0].id;
                     map.setFeatureState({
                         source: 'states',
                         id: hoveredStateId

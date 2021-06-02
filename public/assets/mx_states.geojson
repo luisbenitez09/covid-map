@@ -291,10 +291,10 @@
     {
       "type": "Feature",
       "properties": {
-        "state_code": "12",
-        "state_name": "Guerrero",
-        "id": 2
+        "STATE_ID": "12",
+        "STATE_NAME": "Guerrero",
       },
+      "id": 2
       "geometry": {
         "type": "MultiPolygon",
         "coordinates": [
