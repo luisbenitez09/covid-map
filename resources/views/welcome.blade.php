@@ -49,7 +49,7 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full flex flex-col lg:w-9/12 lg:px-10 lg:overflow-y-auto">
+        <div class="w-full flex flex-col lg:w-8/12 xl:9/12 lg:px-10 lg:overflow-y-auto">
             <!-- Top -->
             <div class="w-full mb-6 flex flex-row justify-between">
                 <!-- Title -->
@@ -119,7 +119,7 @@
         </div>
 
         <!-- Users -->
-        <div class="w-full h-screen lg:-mt-10 lg:w-2/12 bg-white px-5 py-10">
+        <div class="w-full h-screen lg:-mt-10 lg:w-3/12 xl:2/12 bg-white px-5 py-10">
             <!-- Top -->
             <div class="w-full flex flex-row justify-between mb-10">
                 <div class="flex flex-row">
@@ -129,18 +129,68 @@
             </div>
 
             <!-- Color rectangle -->
-            <div class="w-full flex flex-row justify-between p-5 rounded-3xl bg-blue-100">
+            <div class="w-full flex flex-row justify-between p-5 mb-10 rounded-3xl bg-blue-100">
                 <div class="w-1/2 py-2 px-5 rounded-2xl bg-blue-400">
-                    <h1 class="text-white text-lg">IDS 8vo</h1>
+                    <h1 class="text-white text-lg text-center">IDS</h1>
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 m-auto">
                     <h1 class="text-gray-500 text-lg text-center">T.V.</h1>
                 </div>
             </div>
 
             <!-- List -->
-            <div>
-
+            <div class="w-full flex flex-col">
+                <!-- User -->
+                <div class="flex flex-row mb-10 lg:justify-between xl:justify-start">
+                    <!-- Photo -->
+                    <div class="mr-2 lg:mr-0 xl:mr-2">
+                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                    </div>
+                    <!-- Data -->
+                    <div class="flex flex-col mr-10 lg:mr-0 xl:mr-10">
+                        <h1 class="font-bold text-base text-blue-500">Román Romero</h1>
+                        <h2 class="font-light text-sm text-blue-500">Software Developer</h2>
+                        <h3 class="font-light text-xs text-blue-500">IDS TV 8vo</h3>
+                    </div>
+                    <!-- Msg icon -->
+                    <div class="my-auto">
+                        <img src="{{asset('img/icon-mail.png')}}" class="w-8 h-8" alt="User">
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="flex flex-row mb-10 lg:justify-between xl:justify-start">
+                    <!-- Photo -->
+                    <div class="mr-2 lg:mr-0 xl:mr-2">
+                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                    </div>
+                    <!-- Data -->
+                    <div class="flex flex-col mr-10 lg:mr-0 xl:mr-10">
+                        <h1 class="font-bold text-base text-blue-500">María Meza</h1>
+                        <h2 class="font-light text-sm text-blue-500">Software Developer</h2>
+                        <h3 class="font-light text-xs text-blue-500">IDS TV 8vo</h3>
+                    </div>
+                    <!-- Msg icon -->
+                    <div class="my-auto">
+                        <img src="{{asset('img/icon-mail.png')}}" class="w-8 h-8" alt="User">
+                    </div>
+                </div>
+                <!-- User -->
+                <div class="flex flex-row mb-10 lg:justify-between xl:justify-start">
+                    <!-- Photo -->
+                    <div class="mr-2 lg:mr-0 xl:mr-2">
+                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                    </div>
+                    <!-- Data -->
+                    <div class="flex flex-col mr-10 lg:mr-0 xl:mr-10">
+                        <h1 class="font-bold text-base text-blue-500">Luis Benitez</h1>
+                        <h2 class="font-light text-sm text-blue-500">Software Developer</h2>
+                        <h3 class="font-light text-xs text-blue-500">IDS TV 8vo</h3>
+                    </div>
+                    <!-- Msg icon -->
+                    <div class="my-auto">
+                        <img src="{{asset('img/icon-mail.png')}}" class="w-8 h-8" alt="User">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
