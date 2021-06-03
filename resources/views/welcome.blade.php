@@ -39,7 +39,7 @@
                 </div>
 
                 <!-- Logout -->
-                <div class="w-1/6 lg:w-full lg:pt-3 border-l lg:border-l-0 lg:border-t border-white bottom-0">
+                <div class="w-1/6 lg:w-full lg:pt-3 border-l lg:border-l-0 lg:border-t border-white">
                     <div
                         class="w-10 p-1 rounded-xl lg:mb-6 md:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-logout.png')}}" class="w-7 mx-auto" alt="Log Out">
@@ -49,7 +49,7 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full flex flex-col lg:w-8/12 xl:9/12 lg:px-10 lg:overflow-y-auto">
+        <div class="w-full flex flex-col lg:w-8/12 lg:px-10 lg:overflow-y-auto">
             <!-- Top -->
             <div class="w-full mb-6 flex flex-row justify-between">
                 <!-- Title -->
@@ -65,7 +65,7 @@
                         <p class="text-sm font-light text-gray-500">Buscar</p>
                     </div>
                     <div>
-                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                        <img src="{{asset('img/maria-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
         </div>
 
         <!-- Users -->
-        <div class="w-full h-screen lg:-mt-10 lg:w-3/12 xl:2/12 bg-white px-5 py-10">
+        <div class="w-full h-screen lg:-mt-10 lg:w-3/12 bg-white px-5 py-10">
             <!-- Top -->
             <div class="w-full flex flex-row justify-between mb-10">
                 <div class="flex flex-row">
@@ -129,8 +129,8 @@
             </div>
 
             <!-- Color rectangle -->
-            <div class="w-full flex flex-row justify-between p-5 mb-10 rounded-3xl bg-blue-100">
-                <div class="w-1/2 py-2 px-5 rounded-2xl bg-blue-400">
+            <div class="w-full flex flex-row justify-between p-3 mb-10 rounded-3xl bg-blue-100">
+                <div class="w-1/2 py-2 px-4 rounded-2xl bg-blue-400">
                     <h1 class="text-white text-lg text-center">IDS</h1>
                 </div>
                 <div class="w-1/2 m-auto">
@@ -139,12 +139,12 @@
             </div>
 
             <!-- List -->
-            <div class="w-full flex flex-col">
+            <div class="w-full flex flex-col border-b border-blue-300">
                 <!-- User -->
-                <div class="flex flex-row mb-10 lg:justify-between xl:justify-start">
+                <div class="flex flex-row mb-6 lg:justify-between xl:justify-start">
                     <!-- Photo -->
                     <div class="mr-2 lg:mr-0 xl:mr-2">
-                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                        <img src="{{asset('img/roman-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
                     </div>
                     <!-- Data -->
                     <div class="flex flex-col mr-10 lg:mr-0 xl:mr-10">
@@ -158,10 +158,10 @@
                     </div>
                 </div>
                 <!-- User -->
-                <div class="flex flex-row mb-10 lg:justify-between xl:justify-start">
+                <div class="flex flex-row mb-6 lg:justify-between xl:justify-start">
                     <!-- Photo -->
                     <div class="mr-2 lg:mr-0 xl:mr-2">
-                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                        <img src="{{asset('img/maria-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
                     </div>
                     <!-- Data -->
                     <div class="flex flex-col mr-10 lg:mr-0 xl:mr-10">
@@ -175,10 +175,10 @@
                     </div>
                 </div>
                 <!-- User -->
-                <div class="flex flex-row mb-10 lg:justify-between xl:justify-start">
+                <div class="flex flex-row mb-6 lg:justify-between xl:justify-start">
                     <!-- Photo -->
                     <div class="mr-2 lg:mr-0 xl:mr-2">
-                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
+                        <img src="{{asset('img/luis-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
                     </div>
                     <!-- Data -->
                     <div class="flex flex-col mr-10 lg:mr-0 xl:mr-10">
@@ -191,6 +191,15 @@
                         <img src="{{asset('img/icon-mail.png')}}" class="w-8 h-8" alt="User">
                     </div>
                 </div>
+            </div>
+
+            <!-- Data -->
+            <div class="pt-4 bottom-0">
+                <h1 class="text-bold text-base text-blue-500">Universidad Autonoma de Baja Calofornia Sur</h1>
+                <h2 class="text-light text-xs text-gray-400">Departamento Academico de Sistemas Computacionales</h2>
+                <h2 class="text-light text-xs text-gray-400">Ingenieria en Desarrollo de Software</h2>
+                <h2 class="text-light text-xs text-gray-400">T.V. 8vo Semestre</h2>
+                <h2 class="text-light text-xs text-gray-400">Proyecto Final - Graficación Multimedia</h2>
             </div>
         </div>
     </div>
