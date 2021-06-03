@@ -11,11 +11,11 @@
     <title>COVID-19 MAP</title>
 </head>
 
-<body class="bg-purple-100">
+<body class="bg-blue-100">
     <!-- Main row-3 -->
-    <div class="w-full h-screen flex flex-col lg:flex-row p-10">
+    <div class="w-full lg:h-screen flex flex-col lg:flex-row py-10 px-10 lg:px-0">
         <!-- Fake Links -->
-        <div class="w-full mb-6 lg:w-1/12 lg:h-full lg:mb-0 py-5 md:px-3 bg-blue-500 rounded-3xl shadow-2xl">
+        <div class="w-full mb-6 lg:ml-10 lg:w-1/12 lg:h-full lg:mb-0 py-5 md:px-3 bg-blue-500 rounded-3xl shadow-2xl">
             <div class="flex flex-row lg:flex-col">
                 <!-- Logo -->
                 <div class="w-1/6 lg:w-full lg:pb-3 lg:mb-6 border-r lg:border-r-0 lg:border-b border-white">
@@ -24,28 +24,24 @@
 
                 <!-- Fake Links -->
                 <div class="w-4/6 lg:w-full flex flex-row lg:flex-col justify-around">
-                    <div
-                        class="w-10 p-1 rounded-xl :mb-6 lg:mx-auto hover:bg-purple-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-sheet-1.png')}}" class="w-7 mx-auto" alt="Documents">
                     </div>
-                    <div
-                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-purple-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-grap-1.png')}}" class="w-7 mx-auto" alt="Graphics">
                     </div>
-                    <div
-                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-purple-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-user-1.png')}}" class="w-7 mx-auto" alt="Users">
                     </div>
-                    <div
-                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-purple-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-set-1.png')}}" class="w-7 mx-auto" alt="Settings">
                     </div>
                 </div>
 
                 <!-- Logout -->
-                <div class="w-1/6 lg:w-full lg:pt-3 border-l lg:border-l-0 lg:border-t border-white">
+                <div class="w-1/6 lg:w-full lg:pt-3 border-l lg:border-l-0 lg:border-t border-white bottom-0">
                     <div
-                        class="w-10 p-1 rounded-xl md:mb-6 md:mx-auto hover:bg-purple-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                        class="w-10 p-1 rounded-xl lg:mb-6 md:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-logout.png')}}" class="w-7 mx-auto" alt="Log Out">
                     </div>
                 </div>
@@ -53,13 +49,13 @@
         </div>
 
         <!-- Content -->
-        <div class="w-full flex flex-col lg:w-9/12 md:px-10 overflow-y-auto">
+        <div class="w-full flex flex-col lg:w-9/12 lg:px-10 lg:overflow-y-auto">
             <!-- Top -->
             <div class="w-full mb-6 flex flex-row justify-between">
                 <!-- Title -->
                 <div>
                     <h2 class="text-sm text-gray-500">México</h2>
-                    <h1 class="text-xl font-bold text-purple-800">COVID-19 Map</h1>
+                    <h1 class="text-xl font-bold text-blue-500">COVID-19 Map</h1>
                 </div>
 
                 <!-- Search bar and user photo -->
@@ -69,7 +65,7 @@
                         <p class="text-sm font-light text-gray-500">Buscar</p>
                     </div>
                     <div>
-                        <img src="{{asset('img/user-photo.jpg')}}" class="w-10 h-10 rounded-full" alt="User">
+                        <img src="{{asset('img/user-photo.jpg')}}" class="w-12 h-12 rounded-full" alt="User">
                     </div>
                 </div>
             </div>
@@ -108,7 +104,7 @@
             </div>
 
             <!-- Main Cards -->
-            <div class="w-full h-screen flex flex-col gap-10 mb-10">
+            <div class="w-full lg:h-screen flex flex-col gap-10 mb-10">
                 <!-- Map Card -->
                 <div class="w-full h-96 bg-blue-500 rounded-3xl shadow-2xl">
                     <div id='map' class="w-full h-full rounded-3xl"></div>
@@ -120,12 +116,32 @@
                 </div>
             </div>
 
-            
         </div>
 
         <!-- Users -->
-        <div class="w-full lg:w-2/12 bg-red-600 p-5">
-            <h1>test</h1>
+        <div class="w-full h-screen lg:-mt-10 lg:w-2/12 bg-white px-5 py-10">
+            <!-- Top -->
+            <div class="w-full flex flex-row justify-between mb-10">
+                <div class="flex flex-row">
+                    <img src="{{asset('img/icon-people.png')}}" class="w-8 h-8 mr-4" alt="Integrantes">
+                    <h3 class="text-2xl font-bold align-middle text-blue-500">Integrantes</h3>
+                </div>
+            </div>
+
+            <!-- Color rectangle -->
+            <div class="w-full flex flex-row justify-between p-5 rounded-3xl bg-blue-100">
+                <div class="w-1/2 py-2 px-5 rounded-2xl bg-blue-400">
+                    <h1 class="text-white text-lg">IDS 8vo</h1>
+                </div>
+                <div class="w-1/2">
+                    <h1 class="text-gray-500 text-lg text-center">T.V.</h1>
+                </div>
+            </div>
+
+            <!-- List -->
+            <div>
+
+            </div>
         </div>
     </div>
     <script>
