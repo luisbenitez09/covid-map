@@ -7,8 +7,18 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src="/"></script>
 
     <title>COVID-19 MAP</title>
+    <style>
+        .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 
 <body class="bg-blue-100">
@@ -16,24 +26,28 @@
     <div class="w-full lg:h-screen flex flex-col lg:flex-row py-10 px-10 lg:px-0">
         <!-- Fake Links -->
         <div class="w-full mb-6 lg:ml-10 lg:w-1/12 lg:h-full lg:mb-0 py-5 md:px-3 bg-blue-500 rounded-3xl shadow-2xl">
-            <div class="flex flex-row lg:flex-col">
+            <div class="h-full flex flex-row lg:flex-col lg:items-center lg:justify-between my-auto">
                 <!-- Logo -->
-                <div class="w-1/6 lg:w-full lg:pb-3 lg:mb-6 border-r lg:border-r-0 lg:border-b border-white">
+                <div class="w-1/6 lg:w-full lg:pb-3 border-r lg:border-r-0 lg:border-b border-white">
                     <h1 class="text-white font-light text-2xl text-center">RML</h1>
                 </div>
 
                 <!-- Fake Links -->
-                <div class="w-4/6 lg:w-full flex flex-row lg:flex-col justify-around">
-                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                <div class="w-4/6 h-full justify-around lg:w-full flex flex-row lg:flex-col ">
+                    <div
+                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-sheet-1.png')}}" class="w-7 mx-auto" alt="Documents">
                     </div>
-                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div
+                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-grap-1.png')}}" class="w-7 mx-auto" alt="Graphics">
                     </div>
-                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div
+                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-user-1.png')}}" class="w-7 mx-auto" alt="Users">
                     </div>
-                    <div class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div
+                        class="w-10 p-1 rounded-xl lg:mb-6 lg:mx-auto hover:bg-blue-900 transform hover:scale-105 transition duration-300 ease-in-out">
                         <img src="{{asset('img/icon-set-1.png')}}" class="w-7 mx-auto" alt="Settings">
                     </div>
                 </div>
@@ -71,7 +85,7 @@
             </div>
             <!-- Counters -->
             <div class="w-full flex flex-col lg:flex-row gap-10 pt-10 mb-10">
-                
+
                 <div class="w-full lg:w-1/3 h-64 mb-10 rounded-3xl bg-white shadow-2xl">
                     <!-- Icon -->
                     <div class="w-20 h-20 mx-auto rounded-3xl -mt-10 bg-red-500">
@@ -79,9 +93,9 @@
                     </div>
                     <h1 class="text-3xl font-bold text-center mt-6 text-red-500">Confirmados</h1>
                     <h3 class="text-md font-light text-center mb-10 text-gray-500">Registrados</h3>
-                    <h2 class="text-4xl font-bold text-center text-gray-900">809751</h2>
+                    <h2 id="infected" class="text-4xl font-bold text-center text-gray-900">0</h2>
                 </div>
-                
+
                 <div class="w-full lg:w-1/3 h-64 mb-10 rounded-3xl bg-white shadow-2xl">
                     <!-- Icon -->
                     <div class="w-20 h-20 mx-auto rounded-3xl -mt-10 bg-yellow-500">
@@ -89,9 +103,9 @@
                     </div>
                     <h1 class="text-3xl font-bold text-center mt-6 text-yellow-500">Sospechosos</h1>
                     <h3 class="text-md font-light text-center mb-10 text-gray-500">Estimados</h3>
-                    <h2 class="text-4xl font-bold text-center text-gray-900">809751</h2>
+                    <h2 id="suspected" class="text-4xl font-bold text-center text-gray-900">0</h2>
                 </div>
-                
+
                 <div class="w-full lg:w-1/3 h-64 mb-10 rounded-3xl bg-white shadow-2xl">
                     <!-- Icon -->
                     <div class="w-20 h-20 mx-auto rounded-3xl -mt-10 bg-gray-900">
@@ -99,7 +113,7 @@
                     </div>
                     <h1 class="text-3xl font-bold text-center mt-6 text-gray-900">Defunciones</h1>
                     <h3 class="text-md font-light text-center mb-10 text-gray-500">Registrados</h3>
-                    <h2 class="text-4xl font-bold text-center text-gray-900">809751</h2>
+                    <h2 id="deceased" class="text-4xl font-bold text-center text-gray-900">0</h2>
                 </div>
             </div>
 
@@ -107,12 +121,12 @@
             <div class="w-full lg:h-screen flex flex-col gap-10 mb-10">
                 <!-- Map Card -->
                 <div class="w-full h-96 bg-blue-500 rounded-3xl shadow-2xl">
-                    <div id='map' class="w-full h-full rounded-3xl"></div>
+                    <div id='map' class="w-full h-full rounded-3xl"></div>              <!-- ------------------------------------------- -->
                 </div>
 
                 <!-- Second Card -->
-                <div class="w-full h-96 bg-pink-400 rounded-3xl shadow-2xl">
-
+                <div class="w-full h-96 bg-white rounded-3xl shadow-2xl mb-10">
+                    <div id="graphic" class="w-11/12 h-full mx-auto"></div>
                 </div>
             </div>
 
@@ -203,28 +217,48 @@
             </div>
         </div>
     </div>
+    
     <script>
+        let covidData;
+        $.ajax({
+            url: 'https://api.apify.com/v2/key-value-stores/vpfkeiYLXPIDIea2T/records/LATEST?disableRedirect=true',
+            type: 'GET',
+            dataType: 'json',
+            success: function (json) {
+                document.getElementById('infected').innerHTML = json.infected
+                document.getElementById('suspected').innerHTML = json.suspected
+                document.getElementById('deceased').innerHTML = json.deceased
+                covidData = json
+            },
+            error: function (xhr, status) {
+                alert('Hubo un problema al obtener la información, intente más tarde.');
+            },
+        });
+
+    </script>
+    <script>
+
         mapboxgl.accessToken =
             'pk.eyJ1IjoibGJlbml0ZXoiLCJhIjoiY2twZXR5eWlwMGRvZzJ3cDNqYW05ZDJhYyJ9.0oV1feaXlx-K4Z7lnikL-g';
 
-        var map = new mapboxgl.Map({
+        var mapp = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/lbenitez/ckpf2ttue0du617mki59aidzs',
             center: [-101.535003, 22.599937],
             zoom: 3.3
         });
-        
+
         var hoveredStateId = null;
 
-        map.on('load', function () {
-            map.addSource('states', {
+        mapp.on('load', function () {
+            mapp.addSource('states', {
                 'type': 'geojson',
                 'data': '{{asset("assets/mx_states.geojson")}}'
             });
 
             // The feature-state dependent fill-opacity expression will render the hover effect
             // when a feature's hover state is set to true.
-            map.addLayer({
+            mapp.addLayer({
                 'id': 'state-fills',
                 'type': 'fill',
                 'source': 'states',
@@ -233,12 +267,14 @@
                     'fill-color': '#d816e9',
                     'fill-opacity': [
                         'case',
-                        ['boolean', ['feature-state','hover'],
-                            false], 0.5, 0]
+                        ['boolean', ['feature-state', 'hover'],
+                            false
+                        ], 0.5, 0
+                    ]
                 }
             });
 
-            map.addLayer({
+            mapp.addLayer({
                 'id': 'state-borders',
                 'type': 'line',
                 'source': 'states',
@@ -249,12 +285,19 @@
                 }
             });
 
+            var popup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false
+            });
+
+            var coord;
+
             // When the user moves their mouse over the state-fill layer, we'll update the
             // feature state for the feature under the mouse.
-            map.on('mousemove', 'state-fills', function (e) {
+            mapp.on('mousemove', 'state-fills', function (e) {
                 if (e.features.length > 0) {
                     if (hoveredStateId !== null) {
-                        map.setFeatureState({
+                        mapp.setFeatureState({
                             source: 'states',
                             id: hoveredStateId
                         }, {
@@ -262,20 +305,32 @@
                         });
                     }
                     hoveredStateId = e.features[0].id;
-                    map.setFeatureState({
+                    hoveredStateName = e.features[0].properties.STATE_NAME
+
+                    var infected = covidData.State[hoveredStateName].infected;
+                    var deceased = covidData.State[hoveredStateName].deceased;
+                    var content = "<h1>Infectados:"+infected+"</h1><br><h1>Fallecidos: "+deceased+"</h1>"
+                    
+                    coord = e.lngLat
+
+                    popup.setLngLat(coord).setHTML(content).addTo(mapp);
+
+                    mapp.setFeatureState({
                         source: 'states',
                         id: hoveredStateId
                     }, {
-                        hover: true
+                        hover: true,
                     });
                 }
             });
 
+
             // When the mouse leaves the state-fill layer, update the feature state of the
             // previously hovered feature.
-            map.on('mouseleave', 'state-fills', function () {
+            mapp.on('mouseleave', 'state-fills', function () {
                 if (hoveredStateId !== null) {
-                    map.setFeatureState({
+                    popup.remove();
+                    mapp.setFeatureState({
                         source: 'states',
                         id: hoveredStateId
                     }, {
@@ -284,9 +339,13 @@
                 }
                 hoveredStateId = null;
             });
+
         });
 
+    
     </script>
+    <script src="{{ asset('js/grafica.min.js') }}"></script>
+    <script src="{{ asset('js/sketch.js') }}"></script>
 </body>
 
 </html>

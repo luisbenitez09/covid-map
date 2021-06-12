@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "09",
-        "STATE_NAME": "Distrito Federal"
+        "STATE_NAME": "Ciudad de Mexico"
       },
 	     "id": 1,
       "geometry": {
@@ -2333,7 +2333,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "15",
-        "STATE_NAME": "México"
+        "STATE_NAME": "Estado de Mexico"
       },
 	     "id": 3,
       "geometry": {
@@ -27398,7 +27398,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "16",
-        "STATE_NAME": "Michoacán"
+        "STATE_NAME": "Michoacan"
       },
 	     "id": 14,
       "geometry": {
@@ -43255,7 +43255,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "22",
-        "STATE_NAME": "Querétaro"
+        "STATE_NAME": "Queretaro"
       },
 	     "id": 21,
       "geometry": {
@@ -44370,7 +44370,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "24",
-        "STATE_NAME": "San Luis Potosí"
+        "STATE_NAME": "San Luis Potosi"
       },
 	     "id": 22,
       "geometry": {
@@ -56399,7 +56399,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "19",
-        "STATE_NAME": "Nuevo León"
+        "STATE_NAME": "Nuevo Leon"
       },
 	     "id": 27,
       "geometry": {
@@ -62644,7 +62644,7 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "31",
-        "STATE_NAME": "Yucatán"
+        "STATE_NAME": "Yucatan"
       },
 	     "id": 30,
       "geometry": {
